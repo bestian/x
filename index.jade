@@ -23,9 +23,12 @@ html(ng-app='fmIndexApp')
         .four.wide.column
           h2.ui.header Latex
           #latex Latex
+          .ui.divider
+          button#copy.ui.button(onclick = "copyToClipboard()") Copy to Clipboard
         .eight.wide.column
           h2.ui.header Pretty
           #view Pretty
+          .ui.divider
     script(type='text/javascript', src='./bower_components/jquery/dist/jquery.min.js')
     script(type='text/javascript', src='./bower_components/semantic/dist/semantic.min.js')
     script(type='text/javascript', src='./x.js')
