@@ -1,9 +1,12 @@
-bindAll = !->
-  d = $(\#x).val!
-  $(\#latex).html(toLatex d)
+window.bindAll = !->
 
-  url = 'http://chart.apis.google.com/chart?chs=60&cht=tx&chl=' + toLatex d
-  $(\#view).html('<img class ="tex" src = "' + url + '" />' )
+	d = $(\#x).val!
+#	console.log d
 
-$(\#x).on(\keyup,bindAll!)
-$(\#x).on(\change,bindAll!)
+	$(\#latex).html(toLatex d)
+
+	url = 'http://chart.apis.google.com/chart?chs=60&cht=tx&chl=' + toLatex d
+	$(\#view).html('<img class ="tex" src = "' + url + '" />' )
+
+$(\#x).on(\keypress,window.bindAll!)
+$(\#x).on(\change,window.bindAll!)

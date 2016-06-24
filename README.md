@@ -14,6 +14,15 @@ you may run serve.js to create an x API.
 user can send GET request to YOUR_SERVER/x/FORMULA.tex, to compile their x formula to Latex fomula.
 
 
+##Test
+
+
+To test your new formula, simply type your test formula into test.tex, then enter
+
+		node x.js
+
+
+you'll see the resualt logged in console.
 
 
 ##TODO and Bugs
