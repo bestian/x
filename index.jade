@@ -12,32 +12,43 @@ html(ng-app='fmIndexApp')
     //
       if IElink(href='./stylesheets/ie.css', media='screen, projection', rel='stylesheet', type='text/css')
   body
-    h1.ui.header X - A Simplified Latex
+    h1.ui.header 
+      | X - A Simplified Latex
     .ui.divider
     .ui.menu
       a#pop.browse.item
+        i.birthday.icon
         | Examples
         i.dropdown.icon
       .ui.popup
         h4.ui.header Pick One
           .ui.divider
           ul#examples.ui.list
+      .item.right(title = "View Source")
+        i.github.alternate.icon
+
     .ui.divided.grid
       .row
         .four.wide.column
           .ui.form
-            h2.ui.header X
+            h2.ui.header
+              i.eyedropper.icon
+              | X
             textarea#x(onkeyup = "bindAll()", onchange = "bindAll()") 2+1/3 = 7/3
             .ui.divider
             
 
         .four.wide.column
-          h2.ui.header Latex
+          h2.ui.header
+            i.write.icon
+            | Latex
           #latex Latex
           .ui.divider
           button#copy.ui.button(onclick = "copyToClipboard()") Copy to Clipboard
         .eight.wide.column
-          h2.ui.header Pretty
+          h2.ui.header
+            i.paint.brush.icon
+            | Pretty
           #view Pretty
           .ui.divider
     script(type='text/javascript', src='./bower_components/jquery/dist/jquery.min.js')

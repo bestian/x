@@ -13,33 +13,37 @@
     -->
   </head>
   <body>
-    <h1 class="ui header">X - A Simplified Latex</h1>
+    <h1 class="ui header">
+       
+      X - A Simplified Latex
+    </h1>
     <div class="ui divider"></div>
-    <div class="ui menu"><a id="pop" class="browse item">Examples<i class="dropdown icon"></i></a>
+    <div class="ui menu"><a id="pop" class="browse item"><i class="birthday icon"></i>Examples<i class="dropdown icon"></i></a>
       <div class="ui popup">
         <h4 class="ui header">Pick One
           <div class="ui divider"></div>
           <ul id="examples" class="ui list"></ul>
         </h4>
       </div>
+      <div title="View Source" class="item right"><i class="github alternate icon"></i></div>
     </div>
     <div class="ui divided grid">
       <div class="row">
         <div class="four wide column">
           <div class="ui form">
-            <h2 class="ui header">X</h2>
+            <h2 class="ui header"><i class="eyedropper icon"></i>X</h2>
             <textarea id="x" onkeyup="bindAll()" onchange="bindAll()">2+1/3 = 7/3</textarea>
             <div class="ui divider"></div>
           </div>
         </div>
         <div class="four wide column">
-          <h2 class="ui header">Latex</h2>
+          <h2 class="ui header"><i class="write icon"></i>Latex</h2>
           <div id="latex">Latex</div>
           <div class="ui divider"></div>
           <button id="copy" onclick="copyToClipboard()" class="ui button">Copy to Clipboard</button>
         </div>
         <div class="eight wide column">
-          <h2 class="ui header">Pretty</h2>
+          <h2 class="ui header"><i class="paint brush icon"></i>Pretty</h2>
           <div id="view">Pretty</div>
           <div class="ui divider"></div>
         </div>
