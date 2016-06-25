@@ -33,3 +33,25 @@ window.copyToClipboard = !->
 ua = navigator.userAgent.toLowerCase!
 if (ua.indexOf('safari') != -1 and ua.indexOf('chrome') == -1) 
 	$(\#copy).hide!
+
+
+$('.browse')
+	.popup({
+		popup : $('.popup'),
+		inline   : true,
+		hoverable: true,
+		position : 'bottom left',
+		delay: {
+			show: 150,
+			hide: 300
+		}
+	})
+
+
+for k in examples
+	$(\#examples).append('<li><a onclick = "pick(this)">' + k + \</a></li>)
+
+
+window.pick = (o)->
+	$(\#x).val($(o).text!)
+	bindAll!

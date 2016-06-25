@@ -14,12 +14,23 @@ html(ng-app='fmIndexApp')
   body
     h1.ui.header X - A Simplified Latex
     .ui.divider
-    .ui.grid
+    .ui.menu
+      a#pop.browse.item
+        | Examples
+        i.dropdown.icon
+      .ui.popup
+        h4.ui.header Pick One
+          .ui.divider
+          ul#examples.ui.list
+    .ui.divided.grid
       .row
         .four.wide.column
           .ui.form
             h2.ui.header X
             textarea#x(onkeyup = "bindAll()", onchange = "bindAll()") 2+1/3 = 7/3
+            .ui.divider
+            
+
         .four.wide.column
           h2.ui.header Latex
           #latex Latex
@@ -32,4 +43,5 @@ html(ng-app='fmIndexApp')
     script(type='text/javascript', src='./bower_components/jquery/dist/jquery.min.js')
     script(type='text/javascript', src='./bower_components/semantic/dist/semantic.min.js')
     script(type='text/javascript', src='./x.js')
+    script(type='text/javascript', src='./example.js')
     script(type='text/javascript', src='./index.js')
